@@ -13,6 +13,11 @@ app.get('/',(req,res)=>
         res.send(`Hello World! ${port}`)
 
     })
+
+app.get('/appname',(req,res)=>{
+    res.send(`This app name : NODEPROJ001`)
+})    
+
 app.get('/product', (req, res)=>{
 
     res.send(`This is product api on port ${port} , product details to be added `)
